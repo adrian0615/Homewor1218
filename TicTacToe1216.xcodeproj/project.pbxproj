@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		07BA608B1E0446680046E9D7 /* TicTacToe1216.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BA60811E0446680046E9D7 /* TicTacToe1216.framework */; };
-		07BA60901E0446680046E9D7 /* TicTacToe1216Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA608F1E0446680046E9D7 /* TicTacToe1216Tests.swift */; };
 		07BA60921E0446680046E9D7 /* TicTacToe1216.h in Headers */ = {isa = PBXBuildFile; fileRef = 07BA60841E0446680046E9D7 /* TicTacToe1216.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07BA609C1E0446820046E9D7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA609B1E0446820046E9D7 /* Board.swift */; };
+		07BA60A01E046DB30046E9D7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA609F1E046DB30046E9D7 /* Player.swift */; };
+		07BA60A21E046E320046E9D7 /* Winner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA60A11E046E320046E9D7 /* Winner.swift */; };
+		07BA60A41E046E5C0046E9D7 /* FullBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA60A31E046E5C0046E9D7 /* FullBoard.swift */; };
+		07BA60A61E04B2F10046E9D7 /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA60A51E04B2F10046E9D7 /* BoardTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +31,12 @@
 		07BA60841E0446680046E9D7 /* TicTacToe1216.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicTacToe1216.h; sourceTree = "<group>"; };
 		07BA60851E0446680046E9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07BA608A1E0446680046E9D7 /* TicTacToe1216Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToe1216Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07BA608F1E0446680046E9D7 /* TicTacToe1216Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe1216Tests.swift; sourceTree = "<group>"; };
 		07BA60911E0446680046E9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07BA609B1E0446820046E9D7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		07BA609F1E046DB30046E9D7 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		07BA60A11E046E320046E9D7 /* Winner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Winner.swift; sourceTree = "<group>"; };
+		07BA60A31E046E5C0046E9D7 /* FullBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullBoard.swift; sourceTree = "<group>"; };
+		07BA60A51E04B2F10046E9D7 /* BoardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				07BA60841E0446680046E9D7 /* TicTacToe1216.h */,
+				07BA609B1E0446820046E9D7 /* Board.swift */,
+				07BA60A11E046E320046E9D7 /* Winner.swift */,
+				07BA60A31E046E5C0046E9D7 /* FullBoard.swift */,
 				07BA60851E0446680046E9D7 /* Info.plist */,
+				07BA609F1E046DB30046E9D7 /* Player.swift */,
 			);
 			path = TicTacToe1216;
 			sourceTree = "<group>";
@@ -80,8 +92,8 @@
 		07BA608E1E0446680046E9D7 /* TicTacToe1216Tests */ = {
 			isa = PBXGroup;
 			children = (
-				07BA608F1E0446680046E9D7 /* TicTacToe1216Tests.swift */,
 				07BA60911E0446680046E9D7 /* Info.plist */,
+				07BA60A51E04B2F10046E9D7 /* BoardTests.swift */,
 			);
 			path = TicTacToe1216Tests;
 			sourceTree = "<group>";
@@ -148,10 +160,12 @@
 				TargetAttributes = {
 					07BA60801E0446680046E9D7 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					07BA60891E0446680046E9D7 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -196,6 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BA609C1E0446820046E9D7 /* Board.swift in Sources */,
+				07BA60A41E046E5C0046E9D7 /* FullBoard.swift in Sources */,
+				07BA60A21E046E320046E9D7 /* Winner.swift in Sources */,
+				07BA60A01E046DB30046E9D7 /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07BA60901E0446680046E9D7 /* TicTacToe1216Tests.swift in Sources */,
+				07BA60A61E04B2F10046E9D7 /* BoardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +335,7 @@
 		07BA60961E0446680046E9D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -330,6 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dsafdsfads.TicTacToe1216;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -337,6 +357,7 @@
 		07BA60971E0446680046E9D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,11 +378,14 @@
 		07BA60991E0446680046E9D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TicTacToe1216Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dsafdsfads.TicTacToe1216Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -369,6 +393,8 @@
 		07BA609A1E0446680046E9D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TicTacToe1216Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
